@@ -47,8 +47,7 @@ class DepartamentoController extends Controller
             "total"=>sizeof($valores)
         ];
         return response()->json($respuesta,200);
-
-}
+    }
 
 public function nuevoDepto(Request $req){
     $Depto = new Departamento();
