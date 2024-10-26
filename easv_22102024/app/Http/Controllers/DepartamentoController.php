@@ -27,7 +27,7 @@ class DepartamentoController extends Controller
         $valores = $Depto->where("id_departamento",$iddepto)->get();
         $respuesta =[
             "success"=> true,
-            "smg"=>"Valores devueltos por el Endpoint obtenerDepartaentos", 
+            "smg"=>"Valores devueltos por el Endpoint obtenerDepartaento", 
             "data"=>$valores,
             "error"=>"",
             "total"=>sizeof($valores)
@@ -41,7 +41,7 @@ class DepartamentoController extends Controller
         $valores = $Depto->where("id_zona",$idzona)->get();
         $respuesta =[
             "success"=> true,
-            "smg"=>"Valores devueltos por el Endpoint obtenerDepartaentos", 
+            "smg"=>"Valores devueltos por el Endpoint obtenerDepartaentosPorZona", 
             "data"=>$valores,
             "error"=>"",
             "total"=>sizeof($valores)
@@ -58,7 +58,7 @@ public function nuevoDepto(Request $req){
     $valores = $Depto->where("id_departamento",$Depto->id_departamento)->get();
     $respuesta = [
         "success"=> true,
-        "msg"=>"Valores devuelva", 
+        "msg"=>"Valores devueltos por el Endpoint nuevoDepto", 
         "data"=>$valores,
         "error"=>"",
         "total"=>sizeof($valores)
