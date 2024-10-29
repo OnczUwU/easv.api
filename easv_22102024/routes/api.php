@@ -11,5 +11,5 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/departamentos',[DepartaentoController::class,'obtenerDepartamentos']);
 Route::get('/deptoporzona(id_zona)',[DepartaentoController::class,'obtenerDepartamentosporzona']);
-Route::get('/depto/{id_zona}',[DepartaentoController::class,'obtenerDepartamento']);
+Route::get('/depto/(id_zona)',[DepartaentoController::class,'obtenerDepartamento']);
 Route::post('/crearDepto',[DepartaentoController::class,'/nuevoDepto']);
